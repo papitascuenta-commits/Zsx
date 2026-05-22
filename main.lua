@@ -1,6 +1,7 @@
 -- 👑 SXZ FREEZE TRADE VIP 👑
 
 local allowedUsers = {
+	["Petro_domina99"] = true,
     ["PARA_GUARDAR236"] = true,
     ["GOOD1931gg"] = true
 }
