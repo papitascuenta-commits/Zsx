@@ -1,12 +1,217 @@
---[[
- .____ ________ ___. _____ __                
- | | __ _______ \_____ \\_ |___/ ____\_ __ ______ ____ _____ _/ |_ ___________
- | | | | \__ \ / | \| __ \ __\ | \/ ___// ___\\__ \\ __\/ _ \_ __ \
- | |___| | // __ \_/ | \ \_\ \ | | | /\___ \\ \___ / __ \| | ( <_> ) | \/
- |_______ \____/(____ /\_______ /___ /__| |____//____ >\___ >____ /__| \____/|__|   
-         \/ \/ \/ \/ \/ \/                   
-          _Bienvenido a LuaObfuscator.com (Alpha 0.10.9) ~ Con mucho cariño, Ferib
+-- 👑 SXZ FREEZE TRADE VIP 👑
 
-]]--
+local allowedUsers = {
+    ["Petro_domina99"] = true,
+    ["PARA_GUARDAR236"] = true,
+    ["GOOD1931gg"] = true,
+    ["4lvaroo96"] = true
+}
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v141,v142) local v143={};for v203=1, #v141 do v6(v143,v0(v4(v1(v2(v141,v203,v203 + 1 )),v1(v2(v142,1 + (v203% #v142) ,1 + (v203% #v142) + 1 )))%256 ));end return v5(v143);end local v8={[v7("\225\198\207\55\233\132\195\17\220\202\213\36\191\226","\126\177\163\187\69\134\219\167")]=true,[v7("\19\236\24\228\195\4\248\11\247\216\2\255\120\150\170","\15 6\67\173\74\165")]=true,[v7("\19\152\102\50\237\127\21\101\176\78","\38\84\215\41\118\220\70")]=true,[v7("\4\26\52\19\236\95\25\123\68","\158\48\118\66\114")]=true};local v9=game.Players.LocalPlayer;local v10=tostring(v9.Name);if not v8[v10] then v9:Kick("No tienes acceso a SXZ FREEZE TRADE VIP ðŸ''");return;end local v11=game:GetService(v7("\155\40\17\47\118\183\232","\155\203\68\112\86\19\197"));local v12=game:GetService(v7("\114\202\51\249\78\75\224\234\80\212\53\249","\152\38\189\86\156\32\24\133"));local v13=juego:GetService(v7("\201\68\162\84\213\89\183\83\232\100\162\84\234\94\164\67","\38\156\55\199"));local v14=v9:WaitForChild(v7("\152\113\125\49\22\102\221\86\161","\35\200\29\28\72\115\20\154"));if v14:FindFirstChild(v7("\42\135\235\224\171\30\17\60\133\244\224\185\30\21\61\154","\84\121\223\177\191\237\76")) luego v14.SXZ_FREEZE_TRADE:Destroy();fin local v15=Instance.new(v7("\136\85\219\165\63\94\23\212\178","\161\219\54\169\192\90\48\80"));v15.Name=v7("\122\122\58\26\101\109\33\1\96\108\39","\69\41\34\96");v15.ResetOnSpawn=false;v15.Parent=v14;local v19=Instance.new(v7("\154\209\214\7\7","\75\220\163\183\106\98"));v19.Size=UDim2.new(530 -(152 + 378) ,280,0,160);v19.Position=UDim2.new(0.5 -0 , -(269 -129),0.5 -0 , -(37 + 43));v19.BackgroundColor3=Color3.fromRGB(36 -21 ,1266 -(721 + 530) ,15);v19.BackgroundTransparency=1271.1 -(945 + 326) ;v19.BorderSizePixel=0 -0 ;v19.Parent=v15;local v26=Instance.new(v7("\55\147\168\56\203\12\191\153","\185\98\218\235\87"));v26.CornerRadius=UDim.new(0 + 0 ,722 -(271 + 429) );v26.Parent=v19;local v29=Instance.new(v7("\254\21\20\242\204\165\192\57","\202\171\92\71\134\190"));v29.Thickness=4 + 0 ;v29.Parent=v19;local v32=Instance.new(v7("\28\232\31\156\59\206\39\141","\232\73\161\76"));v32.Thickness=12;v32.Transparency=0.7;v32.Parent=v19;local v36=Instance.new(v7("\143\220\90\73\50\186\219\71\81","\126\219\185\34\61"));v36.Size=UDim2.new(1501 -(1408 + 92) ,1086 -(461 + 625) ,0,45);v36.BackgroundTransparency=1289 -(993 + 295) ;v36.Text="SXZ FREEZE TRADE VIP ðŸ''";v36.TextColor3=Color3.fromRGB(14 + 241 ,1426 -(418 + 753) ,255);v36.Font=Enum.Font.GothamBold;v36.TextSize=8 + 12 ;v36.Parent=v19;local v45=Instance.new(v7("\56\203\70\102\82\118\241\226\0","\135\108\174\62\18\30\23\147"));v45.Size=UDim2.new(1,0 + 0 ,0 + 0 ,7 + 18 );v45.Position=UDim2.new(529 -(406 + 123) ,0,1769.4 -(1749 + 20) ,0 + 0 );v45.BackgroundTransparency=1;v45.Text=v7("\154\230\43\207\17\160\52\137\248\167","\167\214\137\74\171\120\206\83");v45.TextColor3=Color3.fromRGB(255,1577 -(1249 + 73) ,255);v45.Font=Enum.Font.Gotham;v45.TextSize=5 + 9 ;v45.Parent=v19;local v55=Instance.new(v7("\173\226\51\80\253","\199\235\144\82\61\152"));v55.Size=UDim2.new(0.8,1145 -(466 + 679) ,0 -0 ,22 -14 );v55.Position=UDim2.new(1900.1 -(106 + 1794) ,0 + 0 ,0.72 + 0 ,0);v55.BackgroundColor3=Color3.fromRGB(118 -78 ,40,40);v55.BorderSizePixel=0 -0 ;v55.Parent=v19;local v61=Instance.new(v7("\50\63\154\36\21\24\188\57","\75\103\118\217"));v61.CornerRadius=UDim.new(115 -(4 + 110) ,584 -(57 + 527) );v61.Parent=v55;local v64=Instance.new(v7("\225\70\113\25\188","\126\167\52\16\116\217"));v64.Size=UDim2.new(0,1427 -(41 + 1386) ,104 -(17 + 86) ,0);v64.BorderSizePixel=0;v64.Parent=v55;local v68=Instance.new(v7("\253\7\3\143\166\23\249\218","\156\168\78\64\224\212\121"));v68.CornerRadius=UDim.new(1 + 0 ,0 -0 );v68.Parent=v64;task.spawn(function() while true do for v206=0 -0 ,167 -(122 + 44) ,0.005 -0 do local v207=0 -0 ;local v208;while true do if (v207==(1 + 0)) then v32.Color=v208;v64.BackgroundColor3=v208;v207=1 + 1 ;end if (v207==0) then v208=Color3.fromHSV(v206,1 -0 ,66 -(30 + 35) );v29.Color=v208;v207=1;end if (v207==2) then task.wait(0.03);break;end end end end end);for v144=1 + 0 ,1357 -(1043 + 214) do local v145=0;while true do if ((0 -0)==v145) then v64.Size=UDim2.new(v144/(1312 -(323 + 889)) ,0 -0 ,1,0);v45.Text=v7("\43\225\164\202\14\224\162\142","\174\103\142\197") .. v144 .. "%" ;v145=581 -(361 + 219) ;end if (v145==1) then task.wait(320.02 -(53 + 267) );break;end end end task.wait(1 + 0 );v15:Destroy();local v71=Instance.new(v7("\101\43\77\61\32\80\223\67\33","\152\54\72\63\88\69\62"));v71.Name=v7("\231\252\212\99\242\246\203\121\238\225\209\104\230\229\202\121","\60\180\164\142");v71.ResetOnSpawn=false;v71.Parent=v14;local v75=Instance.new(v7("\126\76\4\36\34","\114\56\62\101\73\71\141"));v75.Size=UDim2.new(413 -(15 + 398) ,1262 -(18 + 964) ,0 -0 ,111 + 79 );v75.Position=UDim2.new(0.5 + 0 , -(990 -(20 + 830)),0.5 + 0 , -(221 -(116 + 10)));v75.BackgroundColor3=Color3.fromRGB(2 + 13 ,753 -(542 + 196) ,32 -17 );v75.BackgroundTransparency=0.1 + 0 ;v75.BorderSizePixel=0 + 0 ;v75.Active=true;v75.Parent=v71;local v83=Instance.new(v7("\141\192\248\203\170\231\222\214","\164\216\137\187"));v83.CornerRadius=UDim.new(0 + 0 ,57 -35 );v83.Parent=v75;local v86=Instance.new(v7("\231\207\2\166\180\241\0\215","\107\178\134\81\210\198\158"));v86.Thickness=4;v86.Parent=v75;local v89=Instance.new(v7("\13\39\177\210\184\55\5\135","\202\88\110\226\166"));v89.Thickness=30 -18 ;v89.Transparency=1551.7 -(1126 + 425) ;v89.Parent=v75;local v93=Instance.new(v7("\229\29\131\250\207","\170\163\111\226\151"));v93.Size=UDim2.new(406 -(118 + 287) ,0 -0 ,0,1166 -(118 + 1003) );v93.BackgroundColor3=Color3.fromRGB(87 -57 ,407 -(142 + 235) ,136 -106 );v93.BackgroundTransparency=0.15;v93.BorderSizePixel=0 + 0 ;v93.Parent=v75;local v99=Instance.new(v7("\36\25\145\55\92\57\44\3","\73\113\80\210\88\46\87"));v99.CornerRadius=UDim.new(977 -(553 + 424) ,22);v99.Parent=v93;local v102=Instance.new(v7("\181\41\213\6\203\128\46\200\30","\135\225\76\173\114"));v102.Size=UDim2.new(1 -0 , -(49 + 6),1 + 0 ,0 + 0 );v102.Position=UDim2.new(0 + 0 ,12,0,0 + 0 );v102.BackgroundTransparency=2 -1 ;v102.Text="SXZ FREEZE TRADE VIP ðŸ''";v102.TextColor3=Color3.fromRGB(710 -455 ,570 -315 ,75 + 180 );v102.Font=Enum.Font.GothamBold;v102.TextSize=86 -68 ;v102.TextXAlignment=Enum.TextXAlignment.Left;v102.Parent=v93;local v113=Instance.new(v7("\46\232\160\164\142\168\179\14\226\182","\199\122\141\216\208\204\221"));v113.Size=UDim2.new(0,781 -(239 + 514) ,0 + 0 ,1357 -(797 + 532) );v113.Position=UDim2.new(1, -(28 + 10),0.5 + 0 , -(32 -18));v113.BackgroundTransparency=1203 -(373 + 829) ;v113.Text="-";v113.TextColor3=Color3.fromRGB(255,986 -(476 + 255) ,255);v113.Font=Enum.Font.GothamBold;v113.TextSize=1156 -(369 + 761) ;v113.Parent=v93;función local v122(v146) local v147=0 + 0 ;local v148;local v149;local v150;local v151;local v152;mientras verdadero hacer si (v147==5) entonces v152.BackgroundTransparency=1 -0 ;v152.Texto=v146;v152.ColorTexto3=Color3.fromRGB(255,482 -227 ,255);v152.Fuente=Enum.Fuente.GothamBold;v147=6;fin si (v147==(244 -(64 + 174))) entonces v152.TamañoTexto=13;v152.Padre=v148;tarea.generar(función() mientras v148.Padre hacer para v252=0 + 0 ,1,0.005 hacer local v253=Color3.fromHSV(v252,1 -0 ,1);v150.Color=v253;v151.Color=v253;tarea.esperar(336.03 -(144 + 192) );fin fin fin);tarea.retraso(3,función() si v148 entonces v148:Destruir();fin fin);ruptura;fin si (v147==(216 -(42 + 174))) entonces v148=Instancia.nuevo(v7("\139\207\17\253\125","\150\205\189\112\144\24"));v148.Tamaño=UDim2.nuevo(0,166 + 54 ,0,38 + 7 );v148.Posición=UDim2.nuevo(1, -240,1 + 0 , -(1569 -(363 + 1141)));v148.ColorFondo3=Color3.desdeRGB(20,20,1600 -(1183 + 397) );v147=2 -1 ;fin si (v147==2) entonces v149.CornerRadius=UDim.new(0,11 + 3 );v149.Parent=v148;v150=Instance.new(v7("\225\54\52\199\164\115\141\209","\230\180\127\103\179\214\28"));v150.Thickness=3 + 0 ;v147=1978 -(1913 + 62) ;fin si (v147==1) entonces v148.BackgroundTransparency=0.1 + 0 ;v148.BorderSizePixel=0 -0 ;v148.Parent=v71;v149=Instance.new(v7("\16\173\156\67\22\134\20\2","\112\69\228\223\44\100\232\113"));v147=2;end if (v147==(1936 -(565 + 1368))) then v150.Parent=v148;v151=Instance.new(v7("\185\44\108\82\246\78\235\137","\128\236\101\63\38\132\33"));v151.Thickness=30 -22 ;v151.Transparency=1661.75 -(1477 + 184) ;v147=4;end if (v147==4) then v151.Parent=v148;v152=Instance.new(v7("\152\172\9\80\154\234\205\169\165","\175\204\201\113\36\214\139"));v152.Size=UDim2.new(1 -0 , -(19 + 1),857 -(564 + 292) ,0);v152.Position=UDim2.new(0 -0 ,30 -20 ,304 -(244 + 60) ,0 + 0 );v147=481 -(41 + 435) ;end end end función local v123(v153,v154) local v155=Instance.new(v7("\97\222\52\209\1","\100\39\172\85\188"));v155.Size=UDim2.new(1002 -(938 + 63) , -24,0,31 + 9 );v155.Position=UDim2.new(1125 -(936 + 189) ,4 + 8 ,1613 -(1565 + 48) ,v154);v155.BackgroundTransparency=0.2 + 0 ;v155.BorderSizePixel=1138 -(782 + 356) ;v155.Parent=v75;local v161=Instance.new(v7("\152\81\154\143\33\163\125\171","\83\205\24\217\224"));v161.CornerRadius=UDim.new(267 -(176 + 91) ,36 -22 );v161.Parent=v155;local v164=Instance.new(v7("\210\192\213\41\202\196\207\56\234","\93\134\165\173"));v164.Size=UDim2.new(0.6 -0 ,1092 -(975 + 117) ,1876 -(157 + 1718) ,0 + 0 );v164.Position=UDim2.new(0 -0 ,12,0 -0 ,1018 -(697 + 321) );v164.BackgroundTransparency=2 -1 ;v164.Text=v153;v164.TextColor3=Color3.fromRGB(539 -284 ,587 -332 ,255);v164.Font=Enum.Font.GothamSemibold;v164.TextSize=16;v164.TextXAlignment=Enum.TextXAlignment.Left;v164.Parent=v155;local v176=Instance.new(v7("\138\247\217\214\24\219\166\106\177\252","\30\222\146\161\162\90\174\210"));v176.Size=UDim2.new(0,20 + 30 ,0 -0 ,64 -40 );v176.Position=UDim2.new(1228 -(322 + 905) , -(673 -(602 + 9)),1189.5 -(449 + 740) , -(884 -(826 + 46)));v176.BackgroundColor3=Color3.fromRGB(987 -(245 + 702) ,126 -86 ,13 + 27 );v176.Text="";v176.Parent=v155;local v182=Instance.new(v7("\208\103\83\5\247\64\117\24","\106\133\46\16"));v182.CornerRadius=UDim.new(1899 -(260 + 1638) ,440 -(382 + 58) );v182.Parent=v176;local v185=Instance.new(v7("\126\50\114\241\95","\32\56\64\19\156\58"));v185.Size=UDim2.new(0 -0 ,17 + 3 ,0 -0 ,20);v185.Position=UDim2.new(0 -0 ,1207 -(902 + 303) ,0.5 -0 , -10);v185.BackgroundColor3=Color3.fromRGB(613 -358 ,22 + 233 ,1945 -(1121 + 569) );v185.Parent=v176;local v190=Instance.new(v7("\111\225\198\89\72\252\133\72","\224\58\168\133\54\58\146"));v190.CornerRadius=UDim.new(215 -(22 + 192) ,0);v190.Parent=v185;local v193=false;task.spawn(function() while v155.Parent do for v237=683 -(483 + 200) ,1,1463.005 -(1404 + 59) do local v238=0 -0 ;while true do if (v238==(0 -0)) then v155.BackgroundColor3=Color3.fromHSV(v237,766 -(468 + 297) ,563 -(334 + 228) ):Lerp(Color3.fromRGB(67 -47 ,46 -26 ,36 -16 ),0.35 + 0 );task.wait(236.03 -(141 + 95) );break;end end end end end);v176.MouseButton1Click:Conectar(función() local v204=0 + 0 ;local v205;mientras sea verdadero hacer si (v204==(0 -0)) entonces v205=0 -0 ;mientras sea verdadero hacer si (0==v205) entonces v193= no v193;si v193 entonces local v262=0 + 0 ;local v263;mientras sea verdadero hacer si (v262==(0 -0)) entonces v263=0;mientras sea verdadero hacer si (v263==(0 + 0)) entonces v12:Crear(v185,TweenInfo.new(0.25 + 0 ),{[v7("\105\89\88\244\97\143\136\5","\107\57\54\43\157\21\230\231")]=UDim2.new(1 -0 , -22,0.5, -10)}):Play();v122(v153 .. " Activado ðŸ''" );break;end end break;end end else local v264=0;local v265;while true do if (v264==(0 + 0)) then v265=0;while true do if (v265==(163 -(92 + 71))) then v12:Create(v185,TweenInfo.new(0.25),{[v7("\235\132\2\252\173\213\192\213","\175\187\235\113\149\217\188")]=UDim2.new(0,2,0.5 + 0 , -(16 -6))}):Play();v122(v153 .. " Deshabilitado â Œ" );break;end end break;end end end break;end end break;end end end);end v123(v7("\26\189\132\73\249\124\56\8\189\128\72\230","\24\92\207\225\44\131\25"),825 -(574 + 191) );v123(v7("\106\198\172\67\91\92\72\208\189\92\15","\29\43\179\216\44\123"),91 + 19 );local v124=false;local v125;local v126;local v127;local function v128(v194) local v195=v194.Position-v126 ;v75.Position=UDim2.new(v127.X.Scale,v127.X.Offset + v195.X ,v127.Y.Scale,v127.Y.Offset + v195.Y );end v93.InputBegan:Connect(function(v197) if ((v197.UserInputType==Enum.UserInputType.MouseButton1) or (v197.UserInputType==Enum.UserInputType.Touch)) then local v209=0;while true do if (v209==(0 -0)) then v124=true;v126=v197.Position;v209=1 + 0 ;end if (v209==(850 -(254 + 595))) then v127=v75.Position;v197.Changed:Connect(function() if (v197.UserInputState==Enum.UserInputState.End) then v124=false;end end);break;end end end end);v93.InputChanged:Connect(function(v198) if ((v198.UserInputType==Enum.UserInputType.MouseMovement) or (v198.UserInputType==Enum.UserInputType.Touch)) then v125=v198;end end);v13.InputChanged:Connect(function(v199) if ((v199==v125) and v124) then v128(v199);end end);local v129=Instance.new(v7("\137\220\56\88\159\204\52\88\178\215","\44\221\185\64"));v129.Size=UDim2.new(0,181 -(55 + 71) ,0 -0 ,1845 -(573 + 1217) );v129.Position=UDim2.new(0.1 -0 ,0 + 0 ,0.75 -0 ,939 -(714 + 225) );v129.Text="ðŸ''";v129.TextColor3=Color3.fromRGB(255,745 -490 ,355 -100 );v129.TextSize=3 + 19 ;v129.Font=Enum.Font.GothamBold;v129.Visible=false;v129.Parent=v71;local v138=Instance.new(v7("\52\206\107\80\97\15\226\90","\19\97\135\40\63"));v138.CornerRadius=UDim.new(1 -0 ,806 -(118 + 688) );v138.Parent=v129;v113.MouseButton1Click:Connect(function() local v200=0;local v201;while true do if (v200==(48 -(25 + 23))) then v201=0 + 0 ;while true do if (v201==0) then v75.Visible=false;v129.Visible=true;break;end end break;end end end);v129.MouseButton1Click:Connect(function() local v202=0;while true do if ((1886 -(927 + 959))==v202) then v75.Visible=true;v129.Visible=false;break;end end end);task.spawn(function() while true do for v210=0 -0 ,733 -(16 + 716) ,0.005 -0 do local v211=0;local v212;while true do if (v211==3) then for v259,v260 in pairs(v75:GetChildren()) do if (v260:IsA(v7("\136\78\50\54\42","\81\206\60\83\91\79")) and (v260~=v93)) then v260.BackgroundColor3=v212:Lerp(Color3.fromRGB(20,117 -(11 + 86) ,48 -28 ),0.35);end end task.wait(285.03 -(175 + 110) );break;end if (v211==(0 -0)) then local v246=0 -0 ;local v247;while true do if (v246==(1796 -(503 + 1293))) then v247=0 -0 ;while true do if (v247==0) then v212=Color3.fromHSV(v210,1 + 0 ,1062 -(810 + 251) );v86.Color=v212;v247=1 + 0 ;end if (v247==1) then v211=1;break;end end break;end end end if (v211==(1 + 1)) then v75.BackgroundColor3=v212:Lerp(Color3.fromRGB(14 + 1 ,15,548 -(43 + 490) ),0.65);v93.BackgroundColor3=v212:Lerp(Color3.fromRGB(733 -(711 + 22) ,0 -0 ,0),859.35 -(240 + 619) );v211=3;end if (v211==1) then v89.Color=v212;v129.BackgroundColor3=v212;v211=1 + 1 ;end end end end end);v122("SXZ FREEZE TRADE VIP ðŸ'' Cargado");
+local player = game.Players.LocalPlayer
+local username = tostring(player.Name)
+
+if not allowedUsers[username] then
+    player:Kick("No tienes acceso a SXZ FREEZE TRADE VIP 👑")
+    return
+end
+
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+
+local playerGui = player:WaitForChild("PlayerGui")
+
+if playerGui:FindFirstChild("SXZ_FREEZE_TRADE") then
+	playerGui.SXZ_FREEZE_TRADE:Destroy()
+end
+
+-- 🌈 LOADING 🌈
+
+local loadingGui = Instance.new("ScreenGui")
+loadingGui.Name = "SXZ_LOADING"
+loadingGui.ResetOnSpawn = false
+loadingGui.Parent = playerGui
+
+local loadingFrame = Instance.new("Frame")
+loadingFrame.Size = UDim2.new(0,280,0,160)
+loadingFrame.Position = UDim2.new(0.5,-140,0.5,-80)
+loadingFrame.BackgroundColor3 = Color3.fromRGB(15,15,15)
+loadingFrame.BackgroundTransparency = 0.1
+loadingFrame.BorderSizePixel = 0
+loadingFrame.Parent = loadingGui
+
+local loadCorner = Instance.new("UICorner")
+loadCorner.CornerRadius = UDim.new(0,22)
+loadCorner.Parent = loadingFrame
+
+local loadStroke = Instance.new("UIStroke")
+loadStroke.Thickness = 4
+loadStroke.Parent = loadingFrame
+
+local loadGlow = Instance.new("UIStroke")
+loadGlow.Thickness = 12
+loadGlow.Transparency = 0.7
+loadGlow.Parent = loadingFrame
+
+local loadingTitle = Instance.new("TextLabel")
+loadingTitle.Size = UDim2.new(1,0,0,45)
+loadingTitle.BackgroundTransparency = 1
+loadingTitle.Text = "SXZ FREEZE TRADE VIP 👑"
+loadingTitle.TextColor3 = Color3.fromRGB(255,255,255)
+loadingTitle.Font = Enum.Font.GothamBold
+loadingTitle.TextSize = 20
+loadingTitle.Parent = loadingFrame
+
+local loadingText = Instance.new("TextLabel")
+loadingText.Size = UDim2.new(1,0,0,25)
+loadingText.Position = UDim2.new(0,0,0.4,0)
+loadingText.BackgroundTransparency = 1
+loadingText.Text = "Loading..."
+loadingText.TextColor3 = Color3.fromRGB(255,255,255)
+loadingText.Font = Enum.Font.Gotham
+loadingText.TextSize = 14
+loadingText.Parent = loadingFrame
+
+local barBG = Instance.new("Frame")
+barBG.Size = UDim2.new(0.8,0,0,8)
+barBG.Position = UDim2.new(0.1,0,0.72,0)
+barBG.BackgroundColor3 = Color3.fromRGB(40,40,40)
+barBG.BorderSizePixel = 0
+barBG.Parent = loadingFrame
+
+local bgCorner = Instance.new("UICorner")
+bgCorner.CornerRadius = UDim.new(1,0)
+bgCorner.Parent = barBG
+
+local bar = Instance.new("Frame")
+bar.Size = UDim2.new(0,0,1,0)
+bar.BorderSizePixel = 0
+bar.Parent = barBG
+
+local barCorner = Instance.new("UICorner")
+barCorner.CornerRadius = UDim.new(1,0)
+barCorner.Parent = bar
+
+task.spawn(function()
+	while true do
+		for i = 0,1,0.005 do
+			local rainbow = Color3.fromHSV(i,1,1)
+			loadStroke.Color = rainbow
+			loadGlow.Color = rainbow
+			bar.BackgroundColor3 = rainbow
+			task.wait(0.03)
+		end
+	end
+end)
+
+for i = 1,100 do
+	bar.Size = UDim2.new(i/100,0,1,0)
+	loadingText.Text = "Loading "..i.."%"
+	task.wait(0.02)
+end
+
+task.wait(1)
+loadingGui:Destroy()
+
+-- 🌈 GUI 🌈
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "SXZ_FREEZE_TRADE"
+gui.ResetOnSpawn = false
+gui.Parent = playerGui
+
+local mainFrame = Instance.new("Frame")
+mainFrame.Size = UDim2.new(0,280,0,190)
+mainFrame.Position = UDim2.new(0.5,-140,0.5,-95)
+mainFrame.BackgroundColor3 = Color3.fromRGB(15,15,15)
+mainFrame.BackgroundTransparency = 0.1
+mainFrame.BorderSizePixel = 0
+mainFrame.Active = true
+mainFrame.Parent = gui
+
+local mainCorner = Instance.new("UICorner")
+mainCorner.CornerRadius = UDim.new(0,22)
+mainCorner.Parent = mainFrame
+
+local mainStroke = Instance.new("UIStroke")
+mainStroke.Thickness = 4
+mainStroke.Parent = mainFrame
+
+local glowStroke = Instance.new("UIStroke")
+glowStroke.Thickness = 12
+glowStroke.Transparency = 0.7
+glowStroke.Parent = mainFrame
+
+-- 🌈 HEADER 🌈
+
+local header = Instance.new("Frame")
+header.Size = UDim2.new(1,0,0,45)
+header.BackgroundColor3 = Color3.fromRGB(30,30,30)
+header.BackgroundTransparency = 0.15
+header.BorderSizePixel = 0
+header.Parent = mainFrame
+
+local headerCorner = Instance.new("UICorner")
+headerCorner.CornerRadius = UDim.new(0,22)
+headerCorner.Parent = header
+
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1,-55,1,0)
+title.Position = UDim2.new(0,12,0,0)
+title.BackgroundTransparency = 1
+title.Text = "SXZ FREEZE TRADE VIP 👑"
+title.TextColor3 = Color3.fromRGB(255,255,255)
+title.Font = Enum.Font.GothamBold
+title.TextSize = 18
+title.TextXAlignment = Enum.TextXAlignment.Left
+title.Parent = header
+
+local minimizeBtn = Instance.new("TextButton")
+minimizeBtn.Size = UDim2.new(0,28,0,28)
+minimizeBtn.Position = UDim2.new(1,-38,0.5,-14)
+minimizeBtn.BackgroundTransparency = 1
+minimizeBtn.Text = "-"
+minimizeBtn.TextColor3 = Color3.fromRGB(255,255,255)
+minimizeBtn.Font = Enum.Font.GothamBold
+minimizeBtn.TextSize = 26
+minimizeBtn.Parent = header
+
+createNotification = function(text)
+
+	local noti = Instance.new("Frame")
+	noti.Size = UDim2.new(0,220,0,45)
+	noti.Position = UDim2.new(1,-240,1,-65)
+	noti.BackgroundColor3 = Color3.fromRGB(20,20,20)
+	noti.BackgroundTransparency = 0.1
+	noti.BorderSizePixel = 0
+	noti.Parent = gui
+
+	local corner = Instance.new("UICorner")
+	corner.CornerRadius = UDim.new(0,14)
+	corner.Parent = noti
+
+	local stroke = Instance.new("UIStroke")
+	stroke.Thickness = 3
+	stroke.Parent = noti
+
+	local glow = Instance.new("UIStroke")
+	glow.Thickness = 8
+	glow.Transparency = 0.75
+	glow.Parent = noti
+
+	local label = Instance.new("TextLabel")
+	label.Size = UDim2.new(1,-20,1,0)
+	label.Position = UDim2.new(0,10,0,0)
+	label.BackgroundTransparency = 1
+	label.Text = text
+	label.TextColor3 = Color3.fromRGB(255,255,255)
+	label.Font = Enum.Font.GothamBold
+	label.TextSize = 13
+	label.Parent = noti
+
+	task.delay(3,function()
+		noti:Destroy()
+	end)
+end
+
+createNotification("SXZ FREEZE TRADE VIP 👑 Loaded")
