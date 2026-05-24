@@ -1,10 +1,10 @@
 -- 👑 SXZ FREEZE TRADE VIP 👑
 
 local allowedUsers = {
-    ["Petro_domina99"] = true,
+    ["petro_domina99"] = true,
     ["PARA_GUARDAR236"] = true,
     ["GOOD1931gg"] = true,
-    ["4lvaroo96"] = true
+	["4lvaroo96"] = true
 }
 
 local player = game.Players.LocalPlayer
@@ -176,7 +176,9 @@ minimizeBtn.Font = Enum.Font.GothamBold
 minimizeBtn.TextSize = 26
 minimizeBtn.Parent = header
 
-createNotification = function(text)
+-- 🌈 NOTIFICACIONES 🌈
+
+local function createNotification(text)
 
 	local noti = Instance.new("Frame")
 	noti.Size = UDim2.new(0,220,0,45)
@@ -209,9 +211,228 @@ createNotification = function(text)
 	label.TextSize = 13
 	label.Parent = noti
 
+	task.spawn(function()
+		while noti.Parent do
+			for i = 0,1,0.005 do
+				local rainbow = Color3.fromHSV(i,1,1)
+				stroke.Color = rainbow
+				glow.Color = rainbow
+				task.wait(0.03)
+			end
+		end
+	end)
+
 	task.delay(3,function()
-		noti:Destroy()
+		if noti then
+			noti:Destroy()
+		end
 	end)
 end
+
+-- 🌈 TOGGLES 🌈
+
+local function createToggle(text,posY)
+
+	local frame = Instance.new("Frame")
+	frame.Size = UDim2.new(1,-24,0,40)
+	frame.Position = UDim2.new(0,12,0,posY)
+	frame.BackgroundTransparency = 0.2
+	frame.BorderSizePixel = 0
+	frame.Parent = mainFrame
+
+	local frameCorner = Instance.new("UICorner")
+	frameCorner.CornerRadius = UDim.new(0,14)
+	frameCorner.Parent = frame
+
+	local label = Instance.new("TextLabel")
+	label.Size = UDim2.new(0.6,0,1,0)
+	label.Position = UDim2.new(0,12,0,0)
+	label.BackgroundTransparency = 1
+	label.Text = text
+	label.TextColor3 = Color3.fromRGB(255,255,255)
+	label.Font = Enum.Font.GothamSemibold
+	label.TextSize = 16
+	label.TextXAlignment = Enum.TextXAlignment.Left
+	label.Parent = frame
+
+	local toggle = Instance.new("TextButton")
+	toggle.Size = UDim2.new(0,50,0,24)
+	toggle.Position = UDim2.new(1,-62,0.5,-12)
+	toggle.BackgroundColor3 = Color3.fromRGB(40,40,40)
+	toggle.Text = ""
+	toggle.Parent = frame
+
+	local toggleCorner = Instance.new("UICorner")
+	toggleCorner.CornerRadius = UDim.new(1,0)
+	toggleCorner.Parent = toggle
+
+	local circle = Instance.new("Frame")
+	circle.Size = UDim2.new(0,20,0,20)
+	circle.Position = UDim2.new(0,2,0.5,-10)
+	circle.BackgroundColor3 = Color3.fromRGB(255,255,255)
+	circle.Parent = toggle
+
+	local circleCorner = Instance.new("UICorner")
+	circleCorner.CornerRadius = UDim.new(1,0)
+	circleCorner.Parent = circle
+
+	local enabled = false
+
+	task.spawn(function()
+		while frame.Parent do
+			for i = 0,1,0.005 do
+				frame.BackgroundColor3 = Color3.fromHSV(i,1,1):Lerp(Color3.fromRGB(20,20,20),0.35)
+				task.wait(0.03)
+			end
+		end
+	end)
+
+	toggle.MouseButton1Click:Connect(function()
+
+		enabled = not enabled
+
+		if enabled then
+
+			TweenService:Create(circle,TweenInfo.new(0.25),{
+				Position = UDim2.new(1,-22,0.5,-10)
+			}):Play()
+
+			createNotification(text.." Activated 👑")
+
+		else
+
+			TweenService:Create(circle,TweenInfo.new(0.25),{
+				Position = UDim2.new(0,2,0.5,-10)
+			}):Play()
+
+			createNotification(text.." Disabled ❌")
+
+		end
+	end)
+end
+
+createToggle("Freeze Trade",60)
+createToggle("Auto Accept",110)
+
+-- 🌈 DRAG 🌈
+
+local dragging = false
+local dragInput
+local dragStart
+local startPos
+
+local function update(input)
+
+	local delta = input.Position - dragStart
+
+	mainFrame.Position = UDim2.new(
+		startPos.X.Scale,
+		startPos.X.Offset + delta.X,
+		startPos.Y.Scale,
+		startPos.Y.Offset + delta.Y
+	)
+end
+
+header.InputBegan:Connect(function(input)
+
+	if input.UserInputType == Enum.UserInputType.MouseButton1
+	or input.UserInputType == Enum.UserInputType.Touch then
+
+		dragging = true
+		dragStart = input.Position
+		startPos = mainFrame.Position
+
+		input.Changed:Connect(function()
+
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+
+header.InputChanged:Connect(function(input)
+
+	if input.UserInputType == Enum.UserInputType.MouseMovement
+	or input.UserInputType == Enum.UserInputType.Touch then
+
+		dragInput = input
+	end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+
+	if input == dragInput and dragging then
+		update(input)
+	end
+end)
+
+-- 🌈 BUBBLE 🌈
+
+local bubble = Instance.new("TextButton")
+bubble.Size = UDim2.new(0,55,0,55)
+bubble.Position = UDim2.new(0.1,0,0.75,0)
+bubble.Text = "👑"
+bubble.TextColor3 = Color3.fromRGB(255,255,255)
+bubble.TextSize = 22
+bubble.Font = Enum.Font.GothamBold
+bubble.Visible = false
+bubble.Parent = gui
+
+local bubbleCorner = Instance.new("UICorner")
+bubbleCorner.CornerRadius = UDim.new(1,0)
+bubbleCorner.Parent = bubble
+
+minimizeBtn.MouseButton1Click:Connect(function()
+	mainFrame.Visible = false
+	bubble.Visible = true
+end)
+
+bubble.MouseButton1Click:Connect(function()
+	mainFrame.Visible = true
+	bubble.Visible = false
+end)
+
+-- 🌈 COORDINATED RAINBOW 🌈
+
+task.spawn(function()
+
+	while true do
+
+		for i = 0,1,0.005 do
+
+			local rainbow = Color3.fromHSV(i,1,1)
+
+			mainStroke.Color = rainbow
+			glowStroke.Color = rainbow
+			bubble.BackgroundColor3 = rainbow
+
+			mainFrame.BackgroundColor3 = rainbow:Lerp(
+				Color3.fromRGB(15,15,15),
+				0.65
+			)
+
+			header.BackgroundColor3 = rainbow:Lerp(
+				Color3.fromRGB(0,0,0),
+				0.35
+			)
+
+			for _,v in pairs(mainFrame:GetChildren()) do
+
+				if v:IsA("Frame") and v ~= header then
+
+					v.BackgroundColor3 = rainbow:Lerp(
+						Color3.fromRGB(20,20,20),
+						0.35
+					)
+
+				end
+			end
+
+			task.wait(0.03)
+
+		end
+	end
+end)
 
 createNotification("SXZ FREEZE TRADE VIP 👑 Loaded")
